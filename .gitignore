@@ -105,13 +105,22 @@ captures/
 results/
 runs/
 
-# Test data (uncomment if you don't want to track test images/videos)
+# Test data - Images (uncomment to ignore test images)
 # data/*.jpg
 # data/*.jpeg
 # data/*.png
-# data/video/*.mp4
-# data/video/*.avi
 # data/upview data/*.jpg
+
+# Video files - Always ignored (too large for git)
+data/video/*.mp4
+data/video/*.avi
+data/video/*.mov
+data/upview data/video/*.mp4
+data/upview data/video/*.avi
+data/upview data/video/*.mov
+*.mp4
+*.avi
+*.mov
 
 # ============================================================================
 # Project Specific - Models
