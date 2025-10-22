@@ -1,0 +1,25 @@
+# YOLO Object Detection & Measurement System
+# Requirements file for conda/pip installation
+
+# Core ML/CV Libraries
+ultralytics>=8.0.0          # YOLOv8 framework
+torch>=2.0.0                # PyTorch
+torchvision>=0.15.0         # PyTorch vision utilities
+opencv-python>=4.8.0        # Computer vision and video processing
+
+# Image Processing
+Pillow>=10.0.0              # Image manipulation for GUI
+matplotlib>=3.7.0           # Plotting and visualization
+numpy>=1.24.0               # Numerical computations
+scipy>=1.10.0               # Scientific computing
+
+# Model Security (for protection system)
+cryptography>=41.0.0        # Model encryption and protection
+
+# System utilities (usually pre-installed)
+# tkinter                   # GUI framework (comes with Python on most systems)
+
+# Optional - for development
+# jupyter                   # Jupyter notebooks
+# ipython                   # Interactive Python shell
+

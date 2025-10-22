@@ -1,0 +1,6 @@
+{
+  "original_model": "model/upview model/detection/detection.pt",
+  "protected_model": "model/upview model/detection/protected_detection.pt",
+  "hardware_id": "66cdfb469012b3adc6653860f82f7f59",
+  "protected": true
+}

@@ -1,0 +1,216 @@
+# YOLO Detection System - Git Ignore File
+
+# ============================================================================
+# Python
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# Virtual Environments
+# ============================================================================
+venv/
+ENV/
+env/
+.venv
+yolo_env/
+
+# ============================================================================
+# Conda
+# ============================================================================
+.conda/
+*.conda
+
+# ============================================================================
+# IDEs and Editors
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# Operating System
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# Project Specific - Data & Outputs
+# ============================================================================
+
+# Output directories
+output/
+output_segmentation/
+output_video/
+output_upview_detection/
+output_upview_video/
+captures/
+results/
+runs/
+
+# Test data (uncomment if you don't want to track test images/videos)
+# data/*.jpg
+# data/*.jpeg
+# data/*.png
+# data/video/*.mp4
+# data/video/*.avi
+# data/upview data/*.jpg
+
+# ============================================================================
+# Project Specific - Models
+# ============================================================================
+
+# Original model files (keep these private!)
+model/my_model.pt
+model/upview model/detection/detection.pt
+model/upview model/segmentation/segmentation.pt
+model/upview model/segmentation/segmentationnew.pt
+
+# Protected models (encrypted, can be shared but won't work on other hardware)
+model/protected_*.pt
+model/protected_*.pt.lock
+
+# Model training artifacts
+model/runs/
+model/weights/
+*.pt.bak
+
+# ============================================================================
+# Project Specific - Calibration
+# ============================================================================
+
+# Calibration files (machine-specific, don't share)
+calibration.json
+calibration_upview.json
+calibration_camera.json
+
+# ============================================================================
+# Project Specific - Temporary & Cache
+# ============================================================================
+
+# Temporary model files (created by secure_loader)
+temp_model_*.pt
+.temp_*.pt
+
+# Diagnostic outputs
+mask_diagnostic_*.png
+comparison_*.jpg
+detection_comparison_*.jpg
+
+# Logs
+*.log
+logs/
+
+# ============================================================================
+# Documentation (cleanup - keep only README.md)
+# ============================================================================
+
+# Remove old/redundant documentation
+CAMERA_APP_GUIDE.md
+PROTECTION_SCENARIOS.md
+CLIENT_DEPLOYMENT.md
+SECURITY_GUIDE.md
+MASK_ACCURACY_REPORT.md
+MODEL_COMPARISON_REPORT.md
+VIDEO_PROCESSING_SUMMARY.md
+VIDEO_GUIDE.md
+CALIBRATION_COMPARISON.md
+FINAL_SUMMARY.md
+MEASUREMENT_GUIDE.md
+
+# ============================================================================
+# PyTorch & ML
+# ============================================================================
+
+# PyTorch
+*.pth
+*.ckpt
+checkpoint/
+
+# TensorBoard
+events.out.tfevents.*
+tensorboard/
+
+# Weights & Biases
+wandb/
+
+# ============================================================================
+# Misc
+# ============================================================================
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Test files
+test_*.py.bak
+scratch_*.py
+
+# Environment files
+.env
+.env.local
+
