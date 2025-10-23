@@ -69,13 +69,13 @@ def process_with_detection_model(image_path, model, mm_per_pixel=None):
                     cv2.circle(img_result, (mid_x, y2), 4, (0, 255, 255), -1)
                     
                     # Measurement text
-                    height_text = f"{height_mm:.1f}mm"
+                    height_text = f"{height_mm:.2f}mm"
                     text_x = mid_x + 10
                     text_y = (y1 + y2) // 2
                     cv2.putText(img_result, height_text, (text_x, text_y),
                                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
                     
-                    measurement = f"{height_mm:.1f}mm"
+                    measurement = f"{height_mm:.2f}mm"
                 else:
                     measurement = f"{height_px}px"
                 
@@ -151,13 +151,13 @@ def process_with_segmentation_model(image_path, model, mm_per_pixel=None):
                     cv2.circle(img_result, (mid_x, y2), 4, (0, 255, 255), -1)
                     
                     # Measurement text
-                    height_text = f"{height_mm:.1f}mm"
+                    height_text = f"{height_mm:.2f}mm"
                     text_x = mid_x + 10
                     text_y = (y1 + y2) // 2
                     cv2.putText(img_result, height_text, (text_x, text_y),
                                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
                     
-                    measurement = f"{height_mm:.1f}mm"
+                    measurement = f"{height_mm:.2f}mm"
                 else:
                     measurement = f"{height_px}px"
                 

@@ -164,7 +164,7 @@ def run_yolo_segmentation(model_path, data_dir, output_dir='output_segmentation'
                         cv2.circle(img, (mid_x, y2), 4, (0, 255, 255), -1)
                         
                         # Add measurement text - vertical height
-                        height_text = f"{height_mm:.1f}mm"
+                        height_text = f"{height_mm:.2f}mm"
                         (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
                         
                         # Background for measurement text
@@ -182,7 +182,7 @@ def run_yolo_segmentation(model_path, data_dir, output_dir='output_segmentation'
                         cv2.putText(img, label, (x1 + 5, y1 - 5), 
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
                         
-                        print(f"    - {cls_name}: {conf:.2f} | Height: {height_mm:.1f}mm ({height_px}px)")
+                        print(f"    - {cls_name}: {conf:.2f} | Height: {height_mm:.2f}mm ({height_px}px)")
                     else:
                         # No calibration - just show label
                         label = f"{cls_name} {conf:.2f}"

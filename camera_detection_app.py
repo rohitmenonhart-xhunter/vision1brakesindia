@@ -473,7 +473,7 @@ class CameraDetectionApp:
                     cv2.circle(result_frame, (mid_x, y2), 4, (0, 255, 255), -1)
                     
                     # Measurement text
-                    height_text = f"{height_mm:.1f}mm"
+                    height_text = f"{height_mm:.2f}mm"
                     (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
                     text_x = mid_x + 10
                     text_y = (y1 + y2) // 2

@@ -154,7 +154,7 @@ def process_video(video_path, model_path, output_dir='output_upview_video', show
                         cv2.circle(frame, (right_x, y2), 6, (0, 255, 255), -1)
                         
                         # Measurement text (to the RIGHT of the line)
-                        height_text = f"{height_mm:.1f}mm"
+                        height_text = f"{height_mm:.2f}mm"
                         (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.9, 2)
                         text_x = right_x + 15
                         text_y = (y1 + y2) // 2 + th // 2

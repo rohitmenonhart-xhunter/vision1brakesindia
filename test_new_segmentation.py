@@ -89,7 +89,7 @@ def process_with_model(image_path, model, mm_per_pixel=None):
                     cv2.circle(img_result, (mid_x, y2), 5, (0, 255, 255), -1)
                     
                     # Measurement text
-                    height_text = f"{height_mm:.1f}mm"
+                    height_text = f"{height_mm:.2f}mm"
                     (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
                     text_x = mid_x + 15
                     text_y = (y1 + y2) // 2

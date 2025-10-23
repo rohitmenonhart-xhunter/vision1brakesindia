@@ -151,7 +151,7 @@ def process_video(video_path, model_path, output_dir='output_video', show_realti
                         cv2.circle(frame, (mid_x, y2), 5, (0, 255, 255), -1)
                         
                         # Add measurement text
-                        height_text = f"{height_mm:.1f}mm"
+                        height_text = f"{height_mm:.2f}mm"
                         (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
                         text_x = mid_x + 15
                         text_y = (y1 + y2) // 2
@@ -162,7 +162,7 @@ def process_video(video_path, model_path, output_dir='output_video', show_realti
                         cv2.putText(frame, height_text, (text_x, text_y),
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
                         
-                        measurement_text = f"{height_mm:.1f}mm"
+                        measurement_text = f"{height_mm:.2f}mm"
                     else:
                         measurement_text = f"{height_px}px"
                     

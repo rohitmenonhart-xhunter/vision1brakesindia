@@ -132,7 +132,7 @@ def run_upview_segmentation(model_path, data_dir, output_dir='output_upview_segm
                         cv2.circle(img_result, (mid_x, y2), 5, (0, 255, 255), -1)
                         
                         # Measurement text
-                        height_text = f"{height_mm:.1f}mm"
+                        height_text = f"{height_mm:.2f}mm"
                         (tw, th), _ = cv2.getTextSize(height_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
                         text_x = mid_x + 15
                         text_y = (y1 + y2) // 2
@@ -143,7 +143,7 @@ def run_upview_segmentation(model_path, data_dir, output_dir='output_upview_segm
                         cv2.putText(img_result, height_text, (text_x, text_y),
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
                         
-                        print(f"    - {cls_name}: {conf:.2f} | Height: {height_mm:.1f}mm ({height_px}px) | Mask: {mask_area} pixels")
+                        print(f"    - {cls_name}: {conf:.2f} | Height: {height_mm:.2f}mm ({height_px}px) | Mask: {mask_area} pixels")
                     else:
                         print(f"    - {cls_name}: {conf:.2f} | Height: {height_px}px | Mask: {mask_area} pixels")
                     
