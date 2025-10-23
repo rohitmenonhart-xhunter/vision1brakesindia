@@ -300,7 +300,7 @@ def load_protected_model(model_path):
     return loader.load_model(model_path)
 '''
     
-    with open('secure_loader.py', 'w') as f:
+    with open('secure_loader.py', 'w', encoding='utf-8') as f:
         f.write(loader_code)
     
     print("✅ Created secure_loader.py")
